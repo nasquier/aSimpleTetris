@@ -1,0 +1,39 @@
+#tetrisGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 20cm;
+	font-family: led, sans-serif;
+	font-size : 2em;
+}
+
+.gridHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockLine {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    width: 40px;
+    height:40px;
+    border: 2px solid black;
+    margin: -2px;
+    background-color:rgb(128, 128, 128);
+    color: transparent;
+}
+@font-face {
+    font-family: 'led';
+    src: url('led16sgmnt2.ttf');
+}
