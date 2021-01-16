@@ -326,14 +326,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             isMoving = false;
             freezeTetromino();
-            nLinesCleared = cleanCompletedLines();
+            updateScores(cleanCompletedLines());
             unstackNextTetromino();
             if (blockPositions().some(blockIndex => blocks[blockIndex].classList.contains('filled'))) {
                 colorize('black');
                 gameOver();
             } else {
                 colorize();
-                updateScores(nLinesCleared);
                 accelerate();
                 canHold = true;
             }
